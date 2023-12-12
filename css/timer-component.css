@@ -1,0 +1,63 @@
+.timer-component
+{
+    text-align: center;
+}
+
+.timer-component .time
+{
+    font-size: 92px;
+    margin-bottom: 10px;
+}
+
+.timer-component .buttons
+{
+}
+
+.timer-component .buttons button
+{
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-size: 22pt;
+    font-weight: bold;
+    transform: scale(0.9, 0.9);
+    transition: all 0.1s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-transform: none;
+}
+
+.timer-component .buttons button:hover  {
+    transform: scale(0.8);
+}
+
+.timer-component .buttons button:active  {
+    transform: scale(1, 1);
+}
+
+.timer-component .buttons button:last-child
+{
+    margin-right: 0;
+}
+
+.timer-component .buttons button.red
+{
+    color: #EAEAEA;
+    background-color: #B03D3C;
+    border: 5px solid #B03D3C;
+}
+
+.timer-component .buttons button.green
+{
+    color: #EAEAEA;
+    background-color: #439B30;
+    border: 5px solid #439B30;
+}
+
+.timer-component .buttons button.blue
+{
+    color: #EAEAEA;
+    background-color: #257C9D;
+    border: 5px solid #257C9D;
+}
