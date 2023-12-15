@@ -1,12 +1,13 @@
 const app = Vue.createApp({});
 
-app.component('timer-component', {
+app.component('timer-component',
+{
     data()
     {
         return {
             interval: null,
 
-            microsecond:     0,
+            microsecond:     0, //  Microseconds in tens
             timeToSeconds:   0,
             timeToFormatted: '00:00:00',
         }
@@ -34,13 +35,13 @@ app.component('timer-component', {
         },
         timerHandler()
         {
-            this.microsecond += 1;
+            this.microsecond++;
 
-            if (this.microsecond === 100)
+            if (this.microsecond > 99)
             {
-                this.timeToSeconds += 1;
+                this.timeToSeconds++;
 
-                let date = new Date(this.timeToSeconds * 1000);
+                let date = new Date(this.timeToSeconds * 1000); //  We're filing a timestamp
 
                 let hours   = date.getUTCHours().toString().padStart(2, '0');
                 let minutes = date.getUTCMinutes().toString().padStart(2, '0');

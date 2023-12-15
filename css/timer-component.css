@@ -28,11 +28,13 @@
     text-transform: none;
 }
 
-.timer-component .buttons button:hover  {
+.timer-component .buttons button:hover
+{
     transform: scale(0.8);
 }
 
-.timer-component .buttons button:active  {
+.timer-component .buttons button:active
+{
     transform: scale(1, 1);
 }
 
